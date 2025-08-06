@@ -1,0 +1,38 @@
+@import "./button.scss";
+
+.navbar {
+    padding: 20px 34px !important;
+    margin-top: 25px;
+    margin-bottom: 100px;
+    background-color: #1c1c1c;
+    border: 1px solid #262626;
+    border-radius: 50px;
+
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 26px;
+
+        .nav-link {
+            color: white;
+
+            &.active {
+                color: white;
+                padding: 12px 24px;
+                background-color: #262626;
+                border-radius: 50px;
+            }
+        }
+    }
+
+    .navbar-extra {
+        a {
+            color: white;
+
+            &.custom-btn-login {
+                @include custom-btn-login;
+            }
+        }
+    }
+}

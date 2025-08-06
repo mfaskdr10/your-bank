@@ -1,0 +1,29 @@
+body {
+    font-family: "Lexend", sans-serif !important;
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+    min-height: 100vh;
+    cursor: url("../../../public/icon/icons8-dollar-32.png") 4 4, auto;
+
+    /* Untuk seluruh scrollbar */
+    &::-webkit-scrollbar {
+        width: 8px; /* lebar scrollbar */
+    }
+
+    /* Track (jalur scrollbar) */
+    &::-webkit-scrollbar-track {
+        background: #1a1a1a;
+    }
+
+    /* Thumb (bagian yang bisa digeser) */
+    &::-webkit-scrollbar-thumb {
+        background: #caff33;
+        border-radius: 10px;
+        transition: all 0.5s ease-in;
+    }
+
+    /* Saat hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #81a41f;
+    }
+}

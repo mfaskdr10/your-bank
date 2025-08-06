@@ -1,0 +1,228 @@
+@import "../components/button.scss";
+
+.homepage {
+    .hero {
+        // gap: 90px;
+
+        .left {
+            width: 60%;
+
+            .info {
+                padding: 10px 12px;
+                background-color: #262626;
+                width: fit-content;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                margin-bottom: 20px;
+
+                span {
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 24px;
+                }
+            }
+
+            .title {
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%;
+                margin-bottom: 14px;
+
+                span {
+                    color: #caff33;
+                }
+            }
+
+            .desc {
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 150%;
+            }
+
+            .custom-btn-login {
+                @include custom-btn-login;
+            }
+        }
+
+        .right {
+            // position: relative;
+            width: 40%;
+
+            .arrow-design {
+                position: absolute;
+                right: 90px;
+                width: 300px;
+            }
+
+            .trans-exch {
+                position: relative;
+                z-index: 999;
+                max-width: 400px;
+                width: 100%;
+                background-color: #1a1a1a;
+                padding: 34.68px;
+                border-radius: 10.404px;
+                border: 0.867px solid #262626;
+                background: linear-gradient(
+                        215deg,
+                        rgba(26, 26, 26, 0) 0%,
+                        #1a1a1a 39.72%
+                    ),
+                    url(<path-to-image>) lightgray 0% 0% / 62.46418356895447px
+                        62.46418356895447px repeat,
+                    #1a1a1a;
+                background-blend-mode: normal, screen, normal;
+
+                .top {
+                    p {
+                        font-size: 17.341px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%; /* 26.011px */
+                    }
+
+                    .transaction-slider-container {
+                        width: 100%;
+                        max-width: 400px; /* Lebar maksimum untuk container */
+                        height: 150px; /* Tinggi untuk slider vertikal */
+
+                        .swiper {
+                            width: 100%;
+                            height: 100%;
+
+                            .swiper-slide {
+                                margin: 10px auto;
+                                width: 90%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: flex-start; /* Mengatur item aktif di atas */
+                                opacity: 0.2; /* Slide yang tidak aktif akan sedikit transparan */
+                                transition: opacity 0.3s ease;
+                            }
+
+                            .swiper-slide-active {
+                                width: 100%;
+                                position: relative;
+                                z-index: 100;
+                                opacity: 1; /* Slide aktif akan terlihat jelas */
+
+                                .icon-wrapper {
+                                    background-color: #a3ff00; /* Warna ikon hijau terang untuk slide aktif */
+                                    box-shadow: 0 0 15px rgba(163, 255, 0, 0.5);
+                                }
+                            }
+
+                            .transaction-item {
+                                background-color: #1e1e1e; /* Latar belakang item transaksi */
+                                border-radius: 1rem; /* Sudut yang membulat */
+                                padding: 1rem;
+                                width: 95%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                border: 1px solid #333;
+
+                                .icon-wrapper {
+                                    width: 48px;
+                                    height: 48px;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    background-color: #3a3a3a; /* Warna ikon untuk slide tidak aktif */
+                                    margin-right: 1rem;
+                                    transition: background-color 0.3s ease;
+                                    flex-shrink: 0;
+                                }
+
+                                .transaction-details {
+                                    .type {
+                                        font-size: 0.85rem;
+                                        color: #a0a0a0; /* Warna teks abu-abu */
+                                        margin-bottom: 0;
+                                    }
+
+                                    .name {
+                                        font-size: 1rem;
+                                        font-weight: 700;
+                                        color: #ffffff;
+                                        margin-bottom: 0;
+                                    }
+                                }
+
+                                .transaction-amount {
+                                    font-size: 1.1rem;
+                                    font-weight: 700;
+                                    color: #ffffff;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .bottom {
+                    margin-top: 30px;
+
+                    .title {
+                        margin-bottom: 25px;
+                    }
+
+                    table {
+                        border: 0.867px solid #262626;
+                        background: linear-gradient(
+                                215deg,
+                                rgba(26, 26, 26, 0) 0%,
+                                #1a1a1a 39.72%
+                            ),
+                            url(<path-to-image>) lightgray 0% 0% /
+                                62.46418356895447px 62.46418356895447px repeat,
+                            #1a1a1a;
+                        background-blend-mode: normal, screen, normal;
+
+                        td {
+                            background-color: #1a1a1a !important;
+                            color: white;
+                            margin: auto 0;
+                        }
+
+                        .country {
+                            .name {
+                                font-size: 13.873px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: 150%; /* 20.809px */
+                                margin-top: 9px;
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        .amount {
+                            input {
+                                background-color: #1a1a1a !important;
+                                border: none;
+                                color: white;
+                                appearance: none !important;
+
+                                &:focus {
+                                    outline: none;
+                                    border: none; /* Contoh gaya lain saat fokus */
+                                }
+                            }
+                        }
+                    }
+
+                    .custom-btn {
+                        @include custom-btn-login;
+                        background-color: #22251b;
+                        color: #d1ff4d;
+                    }
+                }
+            }
+        }
+    }
+}

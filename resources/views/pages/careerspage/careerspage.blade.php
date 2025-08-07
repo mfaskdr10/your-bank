@@ -6,7 +6,9 @@
     @include('components.navbar')
     <div class="careerspage container">
         @include('pages.careerspage.hero')
-        
+        @include('pages.careerspage.values')
+        @include('pages.careerspage.benefits')
+        @include('pages.careerspage.job')
     </div>
 @endsection
 

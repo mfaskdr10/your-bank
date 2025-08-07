@@ -1,3 +1,8 @@
+@import "../components/header";
+@import "../components/card-value";
+@import "../components/card-benefits";
+@import "../components/card-job";
+
 .careerspage {
     // position: relative;
 
@@ -10,14 +15,14 @@
         height: 650px;
 
         .bg-layout {
-          img {
-            position: absolute;
-            z-index: 1;
-            top: 0;
-            right: 0;
-          }
+            img {
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                right: 0;
+            }
         }
-        
+
         .left {
             display: flex;
             width: 690px;
@@ -31,7 +36,6 @@
             background: var(--Grey-10, #1a1a1a);
             position: absolute;
             z-index: 2;
-
 
             .title {
                 color: var(--Absolute-White, #fff);
@@ -56,6 +60,84 @@
             .hero-image {
                 // height: 716px;
                 width: 750px;
+            }
+        }
+    }
+
+    // values section
+    .values {
+        padding: 150px 0;
+
+        .header {
+            @include header;
+            margin-bottom: 80px;
+            .left {
+                .desc {
+                    max-width: 1200px;
+                }
+            }
+        }
+
+        .values-content {
+            gap: 80px;
+
+            .card-1,
+            .card-2 {
+                gap: 80px;
+
+                .card-value {
+                    @include card-value;
+                }
+            }
+        }
+    }
+
+    // benefits section
+    .benefits {
+        padding: 150px 0;
+        .header {
+            @include header;
+            margin-bottom: 80px;
+            .left {
+                .desc {
+                    max-width: 1200px;
+                }
+            }
+        }
+
+        .benefits-content {
+            gap: 50px;
+
+            .card-1,
+            .card-2 {
+                gap: 50px;
+
+                .card-benefits {
+                    @include card-benefits;
+                }
+            }
+        }
+    }
+
+    // job openings
+    .job {
+        .header {
+            @include header;
+            margin-bottom: 80px;
+            .left {
+                .desc {
+                    max-width: 1200px;
+                }
+            }
+        }
+
+        .job-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+
+            .card-job {
+                @include card-job;
             }
         }
     }

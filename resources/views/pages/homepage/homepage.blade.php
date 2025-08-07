@@ -5,7 +5,11 @@
 @section('content')
     @include('components.navbar')
     <section class="homepage container">
+        {{-- Hero Section --}}
         @include('pages.homepage.hero')
+
+        {{-- Product Section --}}
+        @include('pages.homepage.product')
     </section>
 @endsection
 

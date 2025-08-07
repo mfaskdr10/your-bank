@@ -5,6 +5,8 @@
 @section('content')
     @include('components.navbar')
     <div class="careerspage container">
+        @include('pages.careerspage.hero')
+        
     </div>
 @endsection
 

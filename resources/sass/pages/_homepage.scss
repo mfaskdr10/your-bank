@@ -1,8 +1,15 @@
 @import "../components/button.scss";
+@import "../components/header";
 
 .homepage {
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    // Hero Section
     .hero {
-        // gap: 90px;
+        padding-bottom: 100px;
 
         .left {
             width: 60%;
@@ -42,6 +49,7 @@
                 font-style: normal;
                 font-weight: 300;
                 line-height: 150%;
+                margin-bottom: 50px;
             }
 
             .custom-btn-login {
@@ -50,12 +58,12 @@
         }
 
         .right {
-            // position: relative;
             width: 40%;
+            position: relative;
 
             .arrow-design {
                 position: absolute;
-                right: 90px;
+                right: 0;
                 width: 300px;
             }
 
@@ -191,6 +199,7 @@
                         }
 
                         .country {
+                            padding: 20px;
                             .name {
                                 font-size: 13.873px;
                                 font-style: normal;
@@ -202,17 +211,27 @@
                         }
 
                         .amount {
-                            input {
-                                background-color: #1a1a1a !important;
-                                border: none;
-                                color: white;
-                                appearance: none !important;
+                            padding: 20px;
 
-                                &:focus {
-                                    outline: none;
-                                    border: none; /* Contoh gaya lain saat fokus */
-                                }
+                            p {
+                                margin-bottom: 0;
+                                font-size: 17.341px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 150%; /* 26.011px */
                             }
+
+                            // input {
+                            //     background-color: #1a1a1a !important;
+                            //     border: none;
+                            //     color: white;
+                            //     appearance: none !important;
+
+                            //     &:focus {
+                            //         outline: none;
+                            //         border: none; /* Contoh gaya lain saat fokus */
+                            //     }
+                            // }
                         }
                     }
 
@@ -221,6 +240,110 @@
                         background-color: #22251b;
                         color: #d1ff4d;
                     }
+                }
+            }
+
+            .support-currency {
+                position: absolute;
+                right: 0;
+                margin-top: 20px;
+                display: flex;
+                width: 370.224px;
+                padding: 8.67px 8.67px 8.67px 20.809px;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 69.363px;
+                background: #22251b;
+
+                .currency {
+                    display: flex;
+                    padding: 8.67px;
+                    align-items: flex-start;
+                    gap: 6.936px;
+                    background: #1a1a1a;
+                    border-radius: 50px;
+
+                    .wrapper-img {
+                        width: 34.681px;
+                        height: 34.681px;
+                        padding: 5px 12px;
+                        background-color: #262626;
+                        border-radius: 50px;
+                    }
+                }
+            }
+
+            .monthly-income {
+                display: flex;
+                gap: 10px;
+                padding: 13.873px 17.341px;
+                align-items: center;
+                gap: 8.67px;
+                border-radius: 10.404px;
+                background: #22251b;
+                width: fit-content;
+                position: absolute;
+                left: -60.692px;
+                top: -50px;
+                z-index: 999;
+
+                .group-text {
+                    display: flex;
+                    flex-direction: column;
+
+                    span:nth-child(1) {
+                        font-size: 17.341px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%; /* 26.011px */
+                    }
+
+                    span:nth-child(2) {
+                        font-size: 13.873px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 150%; /* 20.809px */
+                    }
+                }
+            }
+        }
+    }
+
+    // Product Section
+    .product {
+        padding: 150px 0;
+
+        .header {
+            @include header;
+        }
+
+        .individual {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+
+            .individual-card {
+                text-align: center;
+                width: 100%;
+
+                .title {
+                    margin: 30px 0 20px 0;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; /* 36px */
+                }
+
+                .vr {
+                    border-color: #1a1a1a;
+                }
+
+                .desc {
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 150%; /* 27px */
+                    color: #b3b3b3;
                 }
             }
         }

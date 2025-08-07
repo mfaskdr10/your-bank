@@ -3,7 +3,7 @@ body {
     background-color: #1a1a1a !important;
     color: #ffffff !important;
     min-height: 100vh;
-    cursor: url("../../../public/icon/icons8-dollar-32.png") 4 4, auto;
+    // cursor: url("../../../public/icon/icons8-dollar-32.png") 4 4, auto;
 
     /* Untuk seluruh scrollbar */
     &::-webkit-scrollbar {
@@ -27,3 +27,4 @@ body {
         background: #81a41f;
     }
 }
+

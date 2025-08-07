@@ -1,0 +1,54 @@
+@mixin header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 100px;
+
+    .left {
+        .title {
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 72px */
+
+            span {
+                color: #caff33;
+            }
+        }
+
+        .desc {
+            max-width: 800px;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 150%; /* 27px */
+            color: #b3b3b3;
+        }
+    }
+
+    .custom-nav-pills {
+        padding: 14px;
+        border-radius: 82px;
+        border: 1px solid #262626;
+        background: #1c1c1c;
+
+        .nav-link {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 27px */
+            color: #fff;
+            padding: 14px 24px;
+
+            &.active {
+                border-radius: 140px;
+                background: #caff33 !important;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%; /* 27px */
+                color: var(--Grey-11, #1c1c1c);
+            }
+        }
+    }
+}

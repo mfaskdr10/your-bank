@@ -106,5 +106,29 @@
                 <button class="btn w-100 custom-btn">Exchange</button>
             </div>
         </div>
+        <div class="support-currency">
+            <p>Support Currency</p>
+            <div class="currency">
+                <div class="wrapper-img">
+                    <img src="{{ asset('icon/dolar.svg') }}" alt="">
+                </div>
+                <div class="wrapper-img">
+                    <img src="{{ asset('icon/inr1.svg') }}" alt="">
+                </div>
+                <div class="wrapper-img">
+                    <img src="{{ asset('icon/btc.svg') }}" alt="">
+                </div>
+                <div class="wrapper-img">
+                    <img src="{{ asset('icon/eth.svg') }}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="monthly-income">
+            <img src="{{ asset('icon/add.svg') }}" alt="">
+            <div class="group-text">
+                <span>+ $5000,00</span>
+                <span>Monthly Income</span>
+            </div>
+        </div>
     </div>
 </section>

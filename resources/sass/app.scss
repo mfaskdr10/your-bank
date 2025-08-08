@@ -1,4 +1,9 @@
 @use "./base/base";
-@use "./components/navbar.scss";
+
+// Pages
 @use "./pages/homepage";
 @use "./pages/careers";
+
+// Components
+@use "./components/navbar.scss";
+@use "./components/card-value";

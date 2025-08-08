@@ -1,0 +1,16 @@
+@mixin card-value {
+    padding-left: 30px;
+    border-left: 1px solid var(--Green-60, #caff33);
+
+    .title-card {
+        margin-bottom: 30px;
+        color: var(--Grey-30, #4c4c4d);
+        font-size: 58px;
+        font-weight: 500;
+    }
+    .desc-card {
+        color: var(--Grey-70, #b3b3b3);
+        font-size: 18px;
+        font-weight: 300;
+    }
+}

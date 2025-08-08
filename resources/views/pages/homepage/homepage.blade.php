@@ -10,6 +10,12 @@
 
         {{-- Product Section --}}
         @include('pages.homepage.product')
+
+        {{-- UseCase Section --}}
+        @include('pages.homepage.usecase')
+
+        {{-- Features Section --}}
+        @include('pages.homepage.features')
     </section>
 @endsection
 

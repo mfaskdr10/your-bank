@@ -348,4 +348,170 @@
             }
         }
     }
+
+    // UseCase Section
+    .usecase {
+        margin-bottom: 100px;
+        .header {
+            @include header;
+            .left {
+                .desc {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .individual,
+        .business {
+            gap: 100px;
+
+            .case-cards {
+                position: relative;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+                padding: 50px;
+                background-color: #1c1c1c;
+                border-radius: 20px;
+
+                .overlay {
+                    position: absolute;
+                    transform: rotate(-90deg);
+                    width: 200px;
+                    left: 0;
+                    top: 0;
+                }
+
+                .feature-card {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    padding: 30px;
+                    background-color: #1a1a1a;
+                    border-radius: 16px;
+                    border: 1px solid var(--Grey-15, #262626);
+                    background: var(--Grey-10, #1a1a1a);
+
+                    img {
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+
+            .case-inform {
+                .desc {
+                    color: var(--Grey-70, #b3b3b3);
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 150%; /* 27px */
+                    margin-bottom: 62px;
+                }
+
+                .precentage {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 50px;
+                    margin-bottom: 62px;
+
+                    .precentage-item {
+                        width: 100%;
+                        .count {
+                            font-size: 58px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%; /* 87px */
+                            color: var(--Green-60, #caff33);
+                        }
+
+                        .info {
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 150%; /* 27px */
+                            color: var(--Grey-70, #b3b3b3);
+                        }
+                    }
+                }
+
+                .custom-btn {
+                    padding: 18px 24px;
+                    color: white;
+                    border-radius: 82px;
+                    border: 1px solid var(--Grey-15, #262626);
+                    background: var(--Grey-11, #1c1c1c);
+                }
+            }
+        }
+
+        .business {
+            margin-top: 60px;
+        }
+    }
+
+    // Features Section
+    .features {
+        margin-bottom: 100px;
+
+        .header {
+            @include header;
+            margin-bottom: 80px;
+            .left {
+                .desc {
+                    max-width: 80%;
+                }
+            }
+        }
+
+        .features-button {
+            gap: 30px;
+
+            .nav-pills {
+                width: 30%;
+                padding: 50px;
+                background-color: #1c1c1c;
+                border-radius: 12px;
+                gap: 24px;
+                margin-top: 0 !important;
+            }
+
+            .nav-link {
+                text-align: left;
+                width: 100%;
+                background-color: #1a1a1a;
+                border-radius: 100px;
+                border: 1px solid var(--Grey-15, #262626);
+                padding: 18px 24px;
+                color: var(--Absolute-White, #fff);
+
+                &.active {
+                    color: var(--Green-60, #caff33);
+                }
+            }
+
+            .tab-content {
+                width: 100%;
+
+                .features-cards {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 24px;
+
+                    .feature-card {
+                        padding: 50px;
+                        border-radius: 12px;
+                        border: 1px solid var(--Grey-15, #262626);
+                        background: var(--Grey-11, #1c1c1c);
+                        
+                        .title {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

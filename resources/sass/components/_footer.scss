@@ -1,0 +1,61 @@
+footer {
+    gap: 40px;
+    padding: 60px 80px 30px 80px;
+    background: var(--Grey-11, #1c1c1c);
+
+    .logo {
+        width: 132.458px;
+        margin: 0 auto;
+    }
+
+    .nav-footer {
+        gap: 14px;
+        justify-content: center;
+        a {
+            color: var(--White-Shades-90, #e4e4e7);
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+        }
+    }
+
+    .info {
+        gap: 20px;
+        justify-content: center;
+
+        .info-list {
+            gap: 6px;
+            span {
+                color: var(--White-Shades-90, #e4e4e7);
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .service {
+        padding: 12px 24px 12px 12px;
+        justify-content: space-between;
+        border-radius: 100px;
+        border: 1px solid var(--Grey-15, #262626);
+        background: var(--Grey-10, #1a1a1a);
+
+        .icon {
+            gap: 8px;
+        }
+
+        .center {
+            color: var(--Grey-Shades-70, #b3b3b3);
+            font-size: 14px;
+            font-weight: 300;
+            text-decoration: none;
+        }
+
+        .privacy {
+            color: var(--Grey-Shades-70, #b3b3b3);
+            font-size: 14px;
+            font-weight: 300;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+@import "../components/header";
+
+.faq-section {
+    padding: 150px 0;
+
+    .header {
+        @include header;
+        margin-bottom: 80px;
+        .left {
+            .title {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: left;
+                gap: 12px;
+            }
+            .desc {
+                max-width: 1200px;
+            }
+        }
+    }
+
+    .faq-card {
+        background-color: #1a1a1a;
+        border: none;
+        border-radius: 10px;
+        padding: 50px;
+        height: 100%;
+        border-radius: 14px;
+        border: 1px solid var(--Grey-15, #262626);
+
+        h5 {
+            color: var(--Absolute-White, #fff);
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        hr {
+            width: 100%;
+            margin-bottom: 30px;
+            background-color: #262626;
+            height: 1px;
+        }
+
+        p {
+            color: var(--Grey-70, #b3b3b3);
+            font-size: 18px;
+            font-weight: 300;
+            display: -webkit-box;
+            -webkit-line-clamp: 3; // jumlah baris sebelum dipotong
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    }
+
+    .btn-toggle {
+        border-radius: 100px;
+        border: 1px solid var(--Grey-15, #262626);
+        background: var(--Grey-11, #1c1c1c);
+        padding: 18px 24px;
+        gap: 4px;
+        color: var(--Absolute-White, #fff);
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

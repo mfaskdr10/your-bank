@@ -141,4 +141,54 @@
             }
         }
     }
+
+    // start section
+    .start {
+        display: flex;
+        padding: 80px;
+        align-items: center;
+        position: relative;
+        margin-bottom: 150px;
+        gap: 100px;
+        border-radius: 20px;
+        border: 1px solid #262626;
+        background: linear-gradient(
+            267deg,
+            #1c1c1c 40.67%,
+            rgba(28, 28, 28, 0) 99.81%
+        );
+
+        .overlay-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .header {
+            .title {
+                color: var(--Absolute-White, #fff);
+                font-size: 40px;
+                font-weight: 400;
+                margin-bottom: 14px;
+                span {
+                    color: var(--Green-60, #caff33);
+                }
+            }
+            .desc {
+                color: var(--Grey-70, #b3b3b3);
+                font-size: 16px;
+                font-weight: 300;
+                max-width: 800px;
+            }
+        }
+        .button-account {
+            padding: 18px 30px;
+            border-radius: 82px;
+            background: var(--Green-60, #caff33);
+            color: var(--Grey-11, #1c1c1c);
+            font-size: 18px;
+            font-weight: 400;
+            text-decoration: none;
+        }
+    }
 }

@@ -29,22 +29,75 @@
         <div class="tab-content" id="features-tab">
             <div class="tab-pane fade show active" id="features-booking" role="tabpanel">
                 <div class="features-cards">
-                    @include('components.homepage.features-card')
-                    @include('components.homepage.features-card')
-                    @include('components.homepage.features-card')
-                    @include('components.homepage.features-card')
+                    @include('components.homepage.features-card', [
+                        'title' => '24/7 Account Access',
+                        'desc' =>
+                            'Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking platform. Check balances, transfer funds, and pay bills with ease.',
+                    ])
+                    @include('components.homepage.features-card', [
+                        'title' => 'Mobile Banking App',
+                        'desc' =>
+                            'Stay connected to your finances on the go with our user-friendly mobile banking app. Easily manage your accounts, deposit checks, and make payments from your smartphone or tablet.',
+                    ])
+                    @include('components.homepage.features-card', [
+                        'title' => 'Secure Transactions',
+                        'desc' =>
+                            'Rest assured knowing that your transactions are protected by industry-leading security measures. We employ encryption and multi-factor authentication to safeguard your financial information.',
+                    ])
+                    @include('components.homepage.features-card', [
+                        'title' => 'Bill Pay and Transfers',
+                        'desc' =>
+                            'Save time and avoid late fees with our convenient bill pay service. Set up recurring payments or make one-time transfers between your accounts with just a few clicks.',
+                    ])
                 </div>
             </div>
             <div class="tab-pane fade" id="features-financial" role="tabpanel">
                 <div class="features-cards">
-                    @include('components.homepage.features-card')
-                    @include('components.homepage.features-card')
-                    @include('components.homepage.features-card')
-                    @include('components.homepage.features-card')
+                    @include('components.homepage.features-card', [
+                        'title' => '24/7 Account Access',
+                        'desc' =>
+                            'Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking platform. Check balances, transfer funds, and pay bills with ease.',
+                    ])
+                    @include('components.homepage.features-card', [
+                        'title' => 'Mobile Banking App',
+                        'desc' =>
+                            'Stay connected to your finances on the go with our user-friendly mobile banking app. Easily manage your accounts, deposit checks, and make payments from your smartphone or tablet.',
+                    ])
+                    @include('components.homepage.features-card', [
+                        'title' => 'Secure Transactions',
+                        'desc' =>
+                            'Rest assured knowing that your transactions are protected by industry-leading security measures. We employ encryption and multi-factor authentication to safeguard your financial information.',
+                    ])
+                    @include('components.homepage.features-card', [
+                        'title' => 'Bill Pay and Transfers',
+                        'desc' =>
+                            'Save time and avoid late fees with our convenient bill pay service. Set up recurring payments or make one-time transfers between your accounts with just a few clicks.',
+                    ])
                 </div>
             </div>
             <div class="tab-pane fade" id="features-support" role="tabpanel">
-                <p>support</p>
+                <div class="features-cards">
+                    @include('components.homepage.features-card', [
+                        'title' => '24/7 Account Access',
+                        'desc' =>
+                            'Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking platform. Check balances, transfer funds, and pay bills with ease.',
+                    ])
+                    @include('components.homepage.features-card', [
+                        'title' => 'Mobile Banking App',
+                        'desc' =>
+                            'Stay connected to your finances on the go with our user-friendly mobile banking app. Easily manage your accounts, deposit checks, and make payments from your smartphone or tablet.',
+                    ])
+                    @include('components.homepage.features-card', [
+                        'title' => 'Secure Transactions',
+                        'desc' =>
+                            'Rest assured knowing that your transactions are protected by industry-leading security measures. We employ encryption and multi-factor authentication to safeguard your financial information.',
+                    ])
+                    @include('components.homepage.features-card', [
+                        'title' => 'Bill Pay and Transfers',
+                        'desc' =>
+                            'Save time and avoid late fees with our convenient bill pay service. Set up recurring payments or make one-time transfers between your accounts with just a few clicks.',
+                    ])
+                </div>
             </div>
         </div>
     </div>

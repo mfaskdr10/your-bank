@@ -22,7 +22,7 @@
                 <p>Your Transaction</p>
                 <div class="transaction-slider-container">
                     <!-- Swiper -->
-                    <div class="swiper mySwiper">
+                    <div class="swiper transaction-slider">
                         <div class="swiper-wrapper">
                             <!-- Slide 1 -->
                             <div class="swiper-slide">

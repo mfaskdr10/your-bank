@@ -1,0 +1,72 @@
+@import "../components/header";
+
+@mixin testimonial {
+    .header {
+        @include header;
+    }
+
+    .testimonial-slider {
+        padding-left: 50px;
+        padding-right: 50px;
+
+        .swiper-slide {
+            opacity: 0.5;
+
+            .dashed-line {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 30%;
+                height: 1px;
+                /* Membuat efek garis putus-putus */
+                background-image: linear-gradient(
+                    to right,
+                    #555 50%,
+                    transparent 50%
+                );
+                background-size: 8px 1px;
+                background-repeat: repeat-x;
+            }
+        }
+
+        .swiper-slide-active {
+            opacity: 1;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            background-color: rgba(
+                44,
+                44,
+                46,
+                0.8
+            ); /* Warna latar belakang semi-transparan */
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            color: #caff33 !important; /* Warna ikon panah (hijau limau) */
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: rgba(64, 64, 66, 0.9);
+            }
+
+            &::after {
+                font-size: 1.25rem; /* Ukuran ikon panah */
+            }
+        }
+    }
+
+    /* Mengatur garis putus-putus di samping tanda kutip */
+
+    .quote-char {
+        font-size: 6rem;
+        font-weight: bold;
+        color: #caff33;
+        line-height: 1;
+    }
+
+    .author-name {
+        color: #caff33;
+    }
+}

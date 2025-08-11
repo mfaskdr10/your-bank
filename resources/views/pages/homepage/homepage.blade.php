@@ -26,10 +26,10 @@
         {{-- Start Financial --}}
         @include('pages.homepage.start-financial')
 
-        {{-- Footer --}}
-        @include('components.footer')
 
     </section>
+    {{-- Footer --}}
+    @include('components.footer')
 @endsection
 
 @push('script')

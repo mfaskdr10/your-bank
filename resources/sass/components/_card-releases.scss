@@ -1,0 +1,35 @@
+@mixin card-releases {
+    padding: 30px;
+    gap: 51px;
+    border-radius: 40px 40px 16px 16px;
+    border: 1px solid var(--Grey-15, #262626);
+    background: var(--Grey-11, #1c1c1c);
+
+    img {
+      width: 100%;
+    }
+
+    .head {
+        .title-card {
+            color: var(--Absolute-White, #fff);
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        .info {
+            gap: 10px;
+            .info-card {
+                padding: 8px 16px;
+                border-radius: 68px;
+                border: 1px solid var(--Grey-15, #262626);
+                background: var(--Grey-10, #1a1a1a);
+            }
+        }
+    }
+
+    .desc-card {
+        color: var(--Grey-70, #b3b3b3);
+        font-size: 18px;
+        font-weight: 300;
+    }
+}

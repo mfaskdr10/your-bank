@@ -2,66 +2,13 @@
 @import "../components/card-value";
 @import "../components/card-benefits";
 @import "../components/card-job";
+@import "../components/hero";
 
 .careerspage {
     // position: relative;
 
     .hero {
-        border-radius: 20px;
-        background: var(--Grey-11, #1c1c1c);
-        padding: 50px !important;
-        align-items: flex-start;
-        position: relative;
-        height: 650px;
-
-        .bg-layout {
-            img {
-                position: absolute;
-                z-index: 1;
-                top: 0;
-                right: 0;
-            }
-        }
-
-        .left {
-            display: flex;
-            width: 690px;
-            // height: 495px;
-            padding: 20px;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 23px;
-            // flex-shrink: 0;
-            border-radius: 20px 0 50px 20px;
-            background: var(--Grey-10, #1a1a1a);
-            position: absolute;
-            z-index: 2;
-
-            .title {
-                color: var(--Absolute-White, #fff);
-                font-size: 58px;
-                font-weight: 500;
-                text-align: left;
-                span {
-                    color: var(--Green-60, #caff33);
-                }
-            }
-            .desc {
-                color: var(--Grey-70, #b3b3b3);
-                font-size: 16px;
-                font-weight: 300;
-            }
-        }
-
-        .right {
-            position: absolute;
-            right: 50px;
-            z-index: 1;
-            .hero-image {
-                // height: 716px;
-                width: 750px;
-            }
-        }
+        @include hero;
     }
 
     // values section

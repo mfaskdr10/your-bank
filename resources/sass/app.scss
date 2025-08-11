@@ -3,9 +3,12 @@
 // Pages
 @use "./pages/homepage";
 @use "./pages/careers";
+@use "./pages/about";
 
 // Components
 @use "./components/navbar.scss";
 @use "./components/card-value";
 @use "./components/faq";
 @use "./components/footer";
+@use "./components/hero";
+@use "./components/card-releases";

@@ -5,7 +5,12 @@
 @section('content')
     @include('components.navbar')
     <div class="aboutpage container">
+        {{-- Hero Section --}}
+        @include('pages.aboutpage.hero')
+        @include('pages.aboutpage.vm')
+        @include('pages.aboutpage.releases')
     </div>
+    @include('components.footer')
 @endsection
 
 @push('script')

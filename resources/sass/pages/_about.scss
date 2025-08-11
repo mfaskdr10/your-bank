@@ -1,0 +1,109 @@
+@import "../components/hero";
+@import "../components/header";
+@import "../components/card-releases";
+
+.aboutpage {
+    .hero {
+        @include hero;
+        .desc-title {
+            color: var(--Absolute-White, #fff);
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+
+    .header {
+        @include header;
+        margin-bottom: 80px;
+        .left {
+            .desc {
+                max-width: 1200px;
+            }
+        }
+    }
+
+    .vm {
+        padding: 150px 0px;
+        justify-content: space-between;
+
+        .visi-misi {
+            position: relative;
+            .image {
+                padding: 60px 60px 0 60px;
+                position: relative;
+                border-radius: 50px 50px 20px 20px;
+                border: 1px solid var(--Grey-15, #262626);
+                background: linear-gradient(
+                        106deg,
+                        rgba(202, 255, 51, 0.05) -29.45%,
+                        rgba(202, 255, 51, 0) 27.86%
+                    ),
+                    linear-gradient(
+                        267deg,
+                        #1c1c1c 40.67%,
+                        rgba(28, 28, 28, 0) 99.81%
+                    );
+                z-index: 3;
+                .img {
+                    position: relative;
+                    z-index: 3;
+                    width: 480px;
+                }
+                .layout {
+                    position: absolute;
+                    top: -25px;
+                    left: 0;
+                    right: 0;
+                    // transform: translateX(30px);
+                    transform: scale(0.9);
+                    z-index: 1;
+                }
+            }
+
+            .card-vm {
+                gap: 50px;
+
+                .text {
+                    .title {
+                        color: var(--Absolute-White, #fff);
+                        font-size: 38px;
+                        font-weight: 500;
+                    }
+                    .desc {
+                        color: var(--Grey-70, #b3b3b3);
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .card-vm-2 {
+                gap: 50px;
+                .text {
+                    .title {
+                        color: var(--Absolute-White, #fff);
+                        font-size: 38px;
+                        font-weight: 500;
+                    }
+                    .desc {
+                        color: var(--Grey-70, #b3b3b3);
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+
+    .releases {
+      padding: 0px 0px 150px 0px;
+        .section-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            .card-releases {
+                @include card-releases;
+            }
+        }
+    }
+}

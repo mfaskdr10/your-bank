@@ -17,14 +17,17 @@
         {{-- Features Section --}}
         @include('pages.homepage.features')
 
-        {{-- FAQ
-        @include('components.faqsection.faq') --}}
+        {{-- FAQ --}}
+        @include('components.faq')
 
         {{-- Testimonial Section --}}
         @include('components.testimonial')
 
         {{-- Start Financial --}}
         @include('pages.homepage.start-financial')
+
+        {{-- Footer --}}
+        @include('components.footer')
 
     </section>
 @endsection

@@ -5,7 +5,17 @@
 @section('content')
     @include('components.navbar')
     <div class="securitypage container">
+        {{-- Hero --}}
+        @include('pages.securitypage.hero')
+
+        {{-- Protect --}}
+        @include('pages.securitypage.protect')
+
+        {{-- Testimonial --}}
+        @include('components.faq')
     </div>
+
+    @include('components.footer')
 @endsection
 
 @push('script')

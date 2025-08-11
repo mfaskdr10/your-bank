@@ -17,11 +17,3 @@ Route::get('/about', function () {
 Route::get('/security', function () {
     return view('pages.securitypage.securitypage');
 })->name('security');
-
-Route::get('/signup', function () {
-    return view('pages.securitypage.securitypage');
-})->name('security');
-
-Route::get('/login', function () {
-    return view('pages.securitypage.securitypage');
-})->name('security');
